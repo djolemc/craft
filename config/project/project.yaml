@@ -1,0 +1,22 @@
+dateModified: 1664044408
+email:
+  fromEmail: dragoljubd@gmail.com
+  fromName: test
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0b48775d-6f7f-4fc4-b60b-e6fc45175fd1: test # test
+    45e9bd18-4e12-4032-985d-7c971301961e: Common # Common
+    c1245a42-5ce4-4867-bfd6-7e5b0d9e5bef: test # test
+system:
+  edition: solo
+  live: true
+  name: test
+  schemaVersion: 3.7.33
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
