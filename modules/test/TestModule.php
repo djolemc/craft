@@ -15,6 +15,7 @@ use Craft;
 use craft\events\RegisterUrlRulesEvent;
 use craft\web\UrlManager;
 use yii\base\Event;
+use yii\base\Module;
 
 /**
  * Class Testmodule
@@ -22,11 +23,12 @@ use yii\base\Event;
  * @author    djolemc
  *
  */
-class TestModule extends \yii\base\Module
+class TestModule extends Module
 {
 
     /**
      * @inheritdoc
+     *
      */
 
     public function init()

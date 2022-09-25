@@ -22,7 +22,7 @@ class TestController extends craft\web\Controller
     protected $allowAnonymous = ['index', 'test'];
 
     /**
-     * @return string
+     * @return mixed
      */
     public function actionIndex()
     {
@@ -35,7 +35,7 @@ class TestController extends craft\web\Controller
     }
 
     /**
-     * @param string   Fetch data from given url
+     * @param $url string   Fetch data from given url
      *
      * @return mixed
      */

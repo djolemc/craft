@@ -1,6 +1,6 @@
 <?php
 /**
- * task module for Craft CMS 3.x
+ * Test module for Craft CMS 3.x
  *
  * My first module
  *
@@ -10,12 +10,8 @@
 
 namespace modules\test\twigextensions;
 
-use modules\taskmodule\TaskModule;
-
-use Craft;
 
 use Twig\Extension\AbstractExtension;
-use Twig\TwigFilter;
 use Twig\TwigFunction;
 
 /**
@@ -65,16 +61,14 @@ class TestModuleTwigExtension extends AbstractExtension
      * @param array<mixed> $array
      * @param string $key
      *
-     * @return void
+     * @return array<string>
      */
 
     public function pluckInternalFunction(array $array, string $key)
     {
-        array_map(function ($item) use ($key) {
-            echo is_object($item) ? $item->$key . "<br/>" : $item[$key] . "<br/>";
+        return array_map(function ($item) use ($key) {
+            return is_object($item) ? $item->$key : $item[$key];
         }, $array);
-
-
     }
 
 

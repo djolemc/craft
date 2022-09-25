@@ -1,4 +1,8 @@
-{{ custom_pluck(data, 'founder') }}
+{% set result = custom_pluck(data, 'founder') %}
 
-
+<ul>
+    {% for item in result %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
 
